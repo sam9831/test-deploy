@@ -11,7 +11,10 @@ jobs:
           password: ${{ secrets.SSH_PWD }}
           script_stop: true
           script: |
+            cd /root/resource/nginx/
             ls -al
-            touch test.txt
-            echo "hello imooc" >> test.txt
-            cat test.txt
+            rm -rf test-deploy
+            git clone git@github.com:sam9831/test-deploy.git -b ${{ github.ref_name }}
+            cd test-deploy
+            npm install
+            npm run build
