@@ -6,7 +6,8 @@
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.<br>
       hello imooc<br>
-      hello jenkins
+      hello jenkins<br>
+      hello docker
     </p>
     <h3>Installed CLI Plugins</h3>
     <ul>
